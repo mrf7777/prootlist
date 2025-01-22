@@ -16,7 +16,7 @@ Test prootlist implementation.
 Let `origin` refer to the origin of the web server. This is the scheme, domain, and optional port. For example, `http://example.com`, `https://example.com`, `https://example.com:1234`, and `https://test.com` are all different origins.
 | URL Full Path | Content returned with GET call |
 | --- | --- |
-| `<origin>/prootlist/plugins` | List of plugin ids seperated by newlines. |
+| `<origin>/prootlist/plugins_list` | List of plugin ids seperated by newlines. |
 | `<origin>/prootlist/plugins/<id>/git_repo_url` | Full URL to the git repository where the plugin is located. |
 | `<origin>/prootlist/plugins/<id>/name` | Name of the plugin. |
 | `<origin>/prootlist/plugins/<id>/description` | Description of the plugin. This is usually plaintext. |
@@ -26,7 +26,7 @@ Let `origin` refer to the origin of the web server. This is the scheme, domain, 
 | `<origin>/prootlist/plugins/<id>/websites` | May be blank or return 404. A list of full URLs that relate to this plugin seperated by newlines. |
 | `<origin>/prootlist/plugins/<id>/tags` | A list of tags that describe this plugin seperated by newline. |
 | --- | --- |
-| `<origin>/prootlist/authors` | List of author ids seperated by newline. |
+| `<origin>/prootlist/authors_list` | List of author ids seperated by newline. |
 | `<origin>/prootlist/authors/<id>/name` | Name of the author. |
 | `<origin>/prootlist/authors/<id>/bio` | Description of the author. This is usually plaintext. |
 | `<origin>/prootlist/authors/<id>/websites` | A list of full URLs to websites related to the author seperated by newlines. |
