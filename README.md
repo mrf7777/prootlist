@@ -16,18 +16,18 @@ Test prootlist implementation.
 Let `origin` refer to the origin of the web server. This is the scheme, domain, and optional port. For example, `http://example.com`, `https://example.com`, `https://example.com:1234`, and `https://test.com` are all different origins.
 | URL Full Path | Content returned with GET call |
 | --- | --- |
-| `<origin>/plugins` | List of plugin ids seperated by newlines. |
-| `<origin>/plugins/<id>/git_repo_url` | Full URL to the git repository where the plugin is located. |
-| `<origin>/plugins/<id>/name` | Name of the plugin. |
-| `<origin>/plugins/<id>/description` | Description of the plugin. This is usually plaintext. |
-| `<origin>/plugins/<id>/image` | Full URL to the thumbnail or image that represents this plugin. Recommended that the image is 256 by 256 pixels and is either PNG, WEBP, or JPEG. |
-| `<origin>/plugins/<id>/author` | Id of the author. |
-| `<origin>/plugins/<id>/funding_url` | May be blank or return 404. A full URL to the funding page for this plugin. |
-| `<origin>/plugins/<id>/websites` | May be blank or return 404. A list of full URLs that relate to this plugin seperated by newlines. |
-| `<origin>/plugins/<id>/tags` | A list of tags that describe this plugin seperated by newline. |
+| `<origin>/prootlist/plugins` | List of plugin ids seperated by newlines. |
+| `<origin>/prootlist/plugins/<id>/git_repo_url` | Full URL to the git repository where the plugin is located. |
+| `<origin>/prootlist/plugins/<id>/name` | Name of the plugin. |
+| `<origin>/prootlist/plugins/<id>/description` | Description of the plugin. This is usually plaintext. |
+| `<origin>/prootlist/plugins/<id>/image` | Full URL to the thumbnail or image that represents this plugin. Recommended that the image is 256 by 256 pixels and is either PNG, WEBP, or JPEG. |
+| `<origin>/prootlist/plugins/<id>/author` | Id of the author. |
+| `<origin>/prootlist/plugins/<id>/funding_url` | May be blank or return 404. A full URL to the funding page for this plugin. |
+| `<origin>/prootlist/plugins/<id>/websites` | May be blank or return 404. A list of full URLs that relate to this plugin seperated by newlines. |
+| `<origin>/prootlist/plugins/<id>/tags` | A list of tags that describe this plugin seperated by newline. |
 | --- | --- |
-| `<origin>/authors` | List of author ids seperated by newline. |
-| `<origin>/authors/<id>/name` | Name of the author. |
-| `<origin>/authors/<id>/bio` | Description of the author. This is usually plaintext. |
-| `<origin>/authors/<id>/websites` | A list of full URLs to websites related to the author seperated by newlines. |
-| `<origin>/authors/<id>/image` | Full URL to the thumbnail or image that represents this author. Recommended that the image is 256 by 256 pixels and is either PNG, WEBP, or JPEG. |
+| `<origin>/prootlist/authors` | List of author ids seperated by newline. |
+| `<origin>/prootlist/authors/<id>/name` | Name of the author. |
+| `<origin>/prootlist/authors/<id>/bio` | Description of the author. This is usually plaintext. |
+| `<origin>/prootlist/authors/<id>/websites` | A list of full URLs to websites related to the author seperated by newlines. |
+| `<origin>/prootlist/authors/<id>/image` | Full URL to the thumbnail or image that represents this author. Recommended that the image is 256 by 256 pixels and is either PNG, WEBP, or JPEG. |
